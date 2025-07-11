@@ -1,1 +1,1 @@
-# HIT_Java
+# HIT_JAVA
