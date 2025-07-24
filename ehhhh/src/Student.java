@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Student
 {
@@ -18,6 +19,9 @@ public class Student
         System.out.println("Xin chào " + name);
         System.out.println("your first number is " + number1);
         System.out.println("your second number is " + number2);
+
         //System.out.println("chat is this true? "+ TorF);
+        //S.out.pri=
     }
+
 }
