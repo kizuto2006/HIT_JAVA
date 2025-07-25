@@ -19,30 +19,31 @@ public class bai1 {
         System.out.println("Tổng các số lẻ là : " + sumL );
     }
 
-    public static void prime(int[] mang,int n)
+    public static boolean prime(int n)
     {
-        int a=0;
-        for(int i=0;i <n;i++)
+        if(n<2)
         {
-            if(mang[i]>1)
-            {
-                for(n = 2; n*n < mang[i]; n++)
-                {
-                    if( mang[i] % n == 0 )
-                    {
-                        a++;
-                    }
-                }
-                if(a > 2)
-                {
-                    n--;
-                }
-            }
-
-
+            return false;
         }
-        System.out.println("Số lượng các só nguyên tố là : " + n );
+        for(int i = 2;i*i <= n;i++)
+        {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
+    public static void demso(int[] mang,int n)
+    {
+        int snt = 0;
+        for(int i = 0;i < n;i++)
+        {
+            if (prime(mang[i])) {
+                snt++;
+            }
+        }
+        System.out.println("Số các số nguyên tố là : " + snt);
     }
 
     public static void main(String[] args)
@@ -57,6 +58,6 @@ public class bai1 {
             mang[i] = sc.nextInt();
         }
         tong(mang,n);
-        prime(mang,n);
-    }
+        demso(mang,n);
+                    }
 }

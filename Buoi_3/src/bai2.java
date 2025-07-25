@@ -1,13 +1,17 @@
 import java.util.Scanner;
-public class bai2 {
+public class bai2
+{
     static final double PI = 3.14159265 ;
-    public static double tinhC(double r) {
+    public static double tinhC(double r)
+    {
         return  2 * PI * r;
     }
-    public static double tinhS(double r) {
+    public static double tinhS(double r)
+    {
         return PI * r * r;
     }
-    public static void hienThi( double C , double S , double r , int k ) {
+    public static void hienThi( double C , double S , double r , int k )
+    {
         System.out.println("Chu vi của hình tròn là : " + C);
         System.out.println("Diện tích của hình tròn là : " + S);
         System.out.println("Lũy thừa của r mũ k là : " + Math.pow(r, k));
